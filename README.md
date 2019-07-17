@@ -11,3 +11,6 @@
 
 исполнение команд внутри контейнера с БД
 > docker exec -it geek-mysql bash
+
+запуск mysql
+> mysql -u root -p123
