@@ -27,3 +27,15 @@
 
 запуск redis-cli
 > redis-cli
+
+образ БД mongo
+> https://hub.docker.com/_/mongo
+
+запуск
+> docker run --name some-mongo -d mongo
+
+исполнение команд внутри контейнера с Redis
+> docker exec -it /some-mongo /bin/bash
+
+запуск redis-cli
+> mongo
