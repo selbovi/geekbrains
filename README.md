@@ -3,7 +3,7 @@
 
 ## настройки инфраструктуры для ДЗ по БД
 
-образ БД
+образ БД MySql
 > https://hub.docker.com/_/mysql
 
 запуск
@@ -14,3 +14,16 @@
 
 запуск mysql
 > mysql -u root -p123
+
+
+образ БД Redis
+> https://hub.docker.com/_/redis/
+
+запуск
+> docker run --name some-redis -d redis
+
+исполнение команд внутри контейнера с Redis
+> docker exec -it /some-redis /bin/bash
+
+запуск redis-cli
+> redis-cli
